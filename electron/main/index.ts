@@ -45,8 +45,14 @@ const indexHtml = path.join(RENDERER_DIST, 'index.html')
 async function createWindow() {
   win = new BrowserWindow({
     title: 'Main window',
+    width: 1200, // 窗口宽度
+    height: 720, // 窗口高度
+    x: 730, // 窗口位置x坐标
+    y: 360, // 窗口位置y坐标
+    autoHideMenuBar: true, // 隐藏菜单栏
+    // alwaysOnTop: true, // 置顶
     icon: path.join(process.env.VITE_PUBLIC, 'favicon.ico'),
-    webPreferences: {
+    webPreferences: { 
       preload,
       // Warning: Enable nodeIntegration and disable contextIsolation is not secure in production
       // nodeIntegration: true,
