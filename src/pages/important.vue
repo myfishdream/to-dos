@@ -1,11 +1,21 @@
 <template>
-    <div>
-        <h1>重要</h1>
+    <div class="container">
+        <div class="header">
+            <h1>你好</h1>
+        </div>
     </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 
 </script>
 
-<style scoped></style>
+<style scoped>
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #7a58d6;
+}
+
+
+</style>

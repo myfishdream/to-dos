@@ -10,6 +10,11 @@ const router = createRouter({
 	history:createWebHistory(), // 路由工作模式
 	routes:[
 		{
+			name:'',
+			path:'/',
+			component:oneday
+		},
+		{
 			name:'oneday',
 			path:'/oneday',
 			component:oneday

@@ -97,7 +97,7 @@ const selectNav = (id: number) => {
 
     </div>
     <div class="content">
-
+      
       <RouterView></RouterView>
     </div>
   </div>
@@ -106,9 +106,15 @@ const selectNav = (id: number) => {
 <style scoped>
 .container {
   display: flex;
-}
 
+}
+.content{
+  /* border: 1px solid red; */
+  flex-grow: 1;
+  /* overflow: scroll; */
+}
 .sidebar {
+  
   width: 280px;
   height: 100vh;
   background-color: #f5f5f5;
@@ -139,6 +145,7 @@ const selectNav = (id: number) => {
 .nav-list {
   display: flex;
   flex-direction: column;
+    min-width: 200px;
 }
 
 .nav-item {
@@ -148,6 +155,7 @@ const selectNav = (id: number) => {
   padding: 8px 12px;
   cursor: pointer;
   transition: background-color 0.2s;
+
 }
 
 .nav-item:hover {
