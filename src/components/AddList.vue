@@ -13,16 +13,19 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useTodoListStore } from '../store/useTodoList'
+import { message } from '../utils/message'
 
 const store = useTodoListStore()
 const title = ref('')
 
 const handleAdd = () => {
     if (!title.value.trim()) {
+        message.error('请输入待办事项')
         return
     }
     store.addTodo(title.value.trim())
     title.value = ''
+    message.success('添加成功',1000)
 }
 </script>
 
