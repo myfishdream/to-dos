@@ -38,7 +38,8 @@
               </svg>
             </button>
           </div>
-          <div class="message-progress" :style="{ animationDuration: `${msg.duration}ms` }" />
+          <!-- 进度条 -->
+          <!-- <div class="message-progress" :style="{ animationDuration: `${msg.duration}ms` }" /> -->
         </div>
       </div>
     </TransitionGroup>
